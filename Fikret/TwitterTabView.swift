@@ -7,8 +7,8 @@ struct ProfileDestination: Hashable {
 }
 
 struct TwitterTabView: View {
-    @State private var selectedTab = 0
-    @State private var previousTab = 0 // ✅ ADDED: Track previous tab for navigation blocking
+    @State private var selectedTab = 1
+    @State private var previousTab = 1 // ✅ ADDED: Track previous tab for navigation blocking
     @State var isOpen = false
     @State private var showingBroadcast = false
     @EnvironmentObject var tweets: TweetData
