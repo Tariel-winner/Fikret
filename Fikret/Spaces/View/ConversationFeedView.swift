@@ -121,7 +121,7 @@ struct ConversationFeedView: View {
     @EnvironmentObject private var tweetData: TweetData
     @Namespace private var namespace
     
-    @State private var selectedTab: FeedTab = .conversations {
+    @State private var selectedTab: FeedTab = .letsTalk {
         didSet {
             print("\n=== 🔄 Tab Changed ===")
             print("📊 Old tab: \(oldValue)")
